@@ -46,7 +46,9 @@ class Prime(object):
         for p in Prime(5):
             print(p)
 
-for p in Prime(5):
-    print(p)
 
-cProfile.run("list(Prime(1000))")
+if __name__ == '__main__':
+    for p in Prime(5):
+        print(p)
+
+    cProfile.run("list(Prime(1000))")
