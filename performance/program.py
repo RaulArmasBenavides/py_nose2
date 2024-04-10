@@ -36,6 +36,8 @@ def test(n, func):
     with timer() as t:
      result = func(a1, a2)
 
-test(100, common_items)
-test(200, common_items)
-test(400, common_items)
+
+if __name__ == "__main__":
+  test(100, common_items)
+  test(200, common_items)
+  test(400, common_items)
