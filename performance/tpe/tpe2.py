@@ -13,7 +13,7 @@ def verificar_transaccion(transaccion):
     return resultado
 
 # Lista de transacciones de ejemplo
-transacciones = [{'id': i, 'usuario': f'usuario_{i}', 'monto': i*100} for i in range(1, 123456)]
+transacciones = [{'id': i, 'usuario': f'usuario_{i}', 'monto': i*100} for i in range(1, 100)]
 
 def main():
     # Esta función permanece igual, ejecutando secuencialmente

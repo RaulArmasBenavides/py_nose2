@@ -4,12 +4,15 @@ import concurrent.futures
 import timeit
 # Simula la verificación de una transacción
 def verificar_transaccion(transaccion):
+    suma = 0
+    for i in range(10000):
+        suma += (i * transaccion['monto']) % (transaccion['id'] + 1)
     resultado = choice(['Aprobada', 'Rechazada', 'Revisión manual'])
     #print(f"Transacción {transaccion['id']}: {resultado}")
     return resultado
 
 # Lista de transacciones de ejemplo
-transacciones = [{'id': i, 'usuario': f'usuario_{i}', 'monto': i*100} for i in range(1, 123456)]
+transacciones = [{'id': i, 'usuario': f'usuario_{i}', 'monto': i*100} for i in range(1, 1253)]
 
 def main():
     start_time = time.time()
