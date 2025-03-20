@@ -16,8 +16,9 @@ class MyApplication:
         self.logger.error("Esto es un mensaje de error")
         self.logger.critical("Esto es un mensaje crítico")
 
-# Crear una instancia de MyApplication
-app = MyApplication()
+if __name__ == "__main__":
+    # Crear una instancia de MyApplication
+    app = MyApplication()
 
-# Llamar a un método que usa el FakeLogger
-app.do_something()
+    # Llamar a un método que usa el FakeLogger
+    app.do_something()
